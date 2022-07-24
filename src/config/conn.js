@@ -28,7 +28,7 @@ var connection = new MysqlCache({
   cacheProvider: "LRU",
   cacheProviderSetup: {
     // For example when we use memcached (checking the module configuration object) we can do this:
-    serverLocation: "localhost:3000",
+    serverLocation: "localhost:process.env.PORT",
     options: {
       retries: 10,
       retry: 10000,
